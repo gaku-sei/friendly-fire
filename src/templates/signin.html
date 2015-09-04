@@ -1,0 +1,18 @@
+<ion-view view-title="Signin">
+  <ion-content>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Email</span>
+      <input type="text" placeholder="Email" ng-model="signin.credentials.email">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Password</span>
+      <input type="password" placeholder="Password" ng-model="signin.credentials.password">
+    </label>
+    <div class="padding">
+      <button class="button button-block button-calm" ng-click="signin.go()">Go</button>
+    </div>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-assertive" ng-if="signin.error">
+  <div class="title">An error occured</div>
+</div>

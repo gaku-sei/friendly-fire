@@ -1,0 +1,39 @@
+<ion-view cache-view="false" view-title="Account">
+  <ion-content>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Nickname</span>
+      <input type="text" placeholder="Nickname" ng-model="account.user.nickname">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Email</span>
+      <input type="email" placeholder="Email" ng-model="account.user.email">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Name</span>
+      <input type="text" placeholder="Name" ng-model="account.user.realname">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Forename</span>
+      <input type="text" placeholder="Forename" ng-model="account.user.forename">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Message</span>
+      <textarea placeholder="Message" ng-model="account.user.message"></textarea>
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Age</span>
+      <input type="number" placeholder="Age" ng-model="account.user.age">
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Bio</span>
+      <textarea placeholder="Bio" ng-model="account.user.bio"></textarea>
+    </label>
+    <label class="item item-input item-floating-label">
+      <span class="input-label">Avatar Url</span>
+      <input type="text" placeholder="Avatar Url" ng-model="account.user.avatarUrl">
+    </label>
+    <div class="padding">
+      <button class="button button-block button-balanced" ng-click="account.save()">Save</button>
+    </div>
+  </ion-content>
+</ion-view>
